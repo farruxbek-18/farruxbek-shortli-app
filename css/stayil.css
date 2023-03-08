@@ -1,3 +1,13 @@
+:root{
+  --body-bg:#fff;
+  --heading-color:#34313D;
+  --text-color:#9E9AA8;
+  --acksent-color:#2BD0D0;
+  --acksent-color-hover:#9AE3E3;
+  --layt-bg:#F2F2F2;
+  --dark-bg:#232127;
+  --error-color:#F46363;
+}
 /* GLOBAL */
 html{
   height: 100%;
@@ -16,11 +26,11 @@ body{
   height: 100%;
   padding: 0px;
   margin: 0px;
-  font-family: "Arial",sans-serif;
+  font-family:"Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  background-color:var(--body-bg);
+  color:var(--text-color);
 }
 img{
   max-width: 100%;
@@ -29,9 +39,9 @@ img{
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: auto;
 }
 /* MAI-CONTANENT */
