@@ -40,6 +40,17 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* visula hiding */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* CONTAINER */
 .container {
@@ -175,8 +186,6 @@ img {
 /* MAIN SAIT STIAYL */
 
 
-.main-content {
-}
 .hiro {
   background-image: url(../img/working_with_computer.png);
   background-repeat: no-repeat;
@@ -212,4 +221,104 @@ img {
   font-size: 20px;
   line-height: 30px;
   font-weight: bold;
+}
+/* index-url-shortener-features-wrapper  */
+
+.index-url-shortener-features-wrapper {
+  background-color:var(--layt-bg);
+  display: flex;
+  flex-direction: column;
+
+}
+.index-url-shortener-features-wrapper__url-shortener {
+  margin-top: -84px;
+
+}
+/* URL SHORTENER */
+
+
+.url-shortener__form {
+  display: flex;
+  border-radius:10px;
+  background-color:#4B3F6B;
+  background-image:url(../img/Path\ 2.svg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  padding: 52px 64px;
+  margin-bottom: 24px;
+}
+.url-shortener__input-wrapper {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+.url-shortener__input {
+  flex-grow: 1;
+  width: 100%;
+  padding: 14px 32px;
+  border-radius:10px;
+  /* border:3px solid transparent; */
+  color:var(--text-color-dark);
+  font-size: 20px;
+  line-height: 36px;
+}
+.url-shortener__error-msg {
+  display: none;
+}
+.url-shortener__input:not(:focus):not(:placeholder-shown):invalid{
+  border-color: var(--error-color);
+  color:var(--error-color);
+}
+.url-shortener__button {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  border-radius:10px;
+}
+
+
+/* URL-SHORTENER RESULTS */
+
+.url-shortener__results {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.url-shortener__result {
+  display: flex;
+  align-items:center;
+  margin-bottom: 16px;
+  background-color:#fff;
+  border-radius:8px;
+  padding: 16px 24px;
+}
+.url-shortener__original-link {
+  width: 100%;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+  color:var(--text-color-dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.url-shortener__short-link {
+  text-decoration:none;
+  color:var(--acksent-color);
+  margin-right: 24px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.button-result {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 700;
+  border-radius:8px;
+  padding: 8px 24px 6px;
 }

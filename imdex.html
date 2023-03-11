@@ -51,7 +51,7 @@
   <main class="main-content">
 
     <!-- HIRO -->
-    <section class="hiro">
+    <div class="hiro">
       <div class="container">
         <div class="hiro__content-iner">
           <h1 class="hiro__heading">More than just <br> shorter links</h1>
@@ -61,7 +61,45 @@
           <a class="hiro__button-link button" href="./imdex.html">Get Started</a>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!--url shortener  -->
+    <div class="index-url-shortener-features-wrapper">
+      <div class="index-url-shortener-features-wrapper__url-shortener">
+        <!-- url-shortener -->
+        <section class="url-shortener ">
+          <div class="container">
+            <h2 class="visually-hidden">url shortener</h2>
+            <form class="url-shortener__form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="url-shortener__input-wrapper">
+                <input class="url-shortener__input" type="url" name="url" placeholder="Shorten a link here..."
+                  aria-label="url-input" required>
+                <div class="url-shortener__error-msg">Please add a link</div>
+              </div>
+              <button class="url-shortener__button button">Shorten It!</button>
+            </form>
+            <div class="url-shortener__results">
+              <div class="url-shortener__result">
+                <div class="url-shortener__original-link">https://www.frontendmentor.io</div>
+                <a class="url-shortener__short-link" href="5">https://rel.ink/k4lKyk</a>
+                <button class="button button-result">Copy</button>
+              </div>
+              <div class="url-shortener__result">
+                <div class="url-shortener__original-link">https://twitter.com/frontendmentor</div>
+                <a class="url-shortener__short-link" href="5">https://rel.ink/gxOXp9</a>
+                <button class="button button-result">Copy</button>
+              </div>
+              <div class="url-shortener__result">
+                <div class="url-shortener__original-link">https://www.linkedin.com/company/frontend-mentortendmentor.io
+                </div>
+                <a class="url-shortener__short-link" href="5">https://rel.ink/gob3X9</a>
+                <button class="button button-result">Copy</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
 
 
   </main>
