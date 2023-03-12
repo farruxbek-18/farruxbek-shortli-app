@@ -333,7 +333,7 @@ img {
 /* ADVECED STATISTIKA */
 
 .advanced-statistika {
-  padding: 100px 0px 120px;
+  padding: 100px 0px 90px;
 }
 
 .advanced-statistika__top {
@@ -348,6 +348,7 @@ img {
   font-weight: 700;
   text-align: center;
   color:var(--text-color-dark);
+  text-transform: capitalize;
   margin: 0px;
   margin-bottom: 15px;
 }
@@ -387,6 +388,7 @@ img {
   padding: 72px 32px 30px 32px;
   background-color:#fff;
   border-radius:10px;
+  margin: 0px;
 }
 .advanced-statistika__item:nth-child(2){
   margin-top: 50px;
@@ -416,6 +418,7 @@ img {
   line-height: 33px;
   font-weight: 700;
   color:var(--text-color-dark);
+  text-transform: capitalize;
   margin: 0px;
 }
 .item__text {
@@ -423,4 +426,38 @@ img {
   font-size: 15px;
   line-height: 26px;
   font-weight: 500;
+}
+
+/* CTA */
+.cta {
+  width: 100%;
+  background-image:url(../img/cta-img.svg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  padding:57px 0px;
+
+}
+.sta-container {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  text-align: center;
+
+}
+
+.cta__titel {
+  margin: 0px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'poppens',sans-serif;
+  line-height: 48px;
+  color:#fff;
+  margin-bottom: 32px;
+}
+
+.cta-button {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: 'poppins',sans-serif;
 }
