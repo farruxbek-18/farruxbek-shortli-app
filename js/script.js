@@ -14,6 +14,10 @@ if (elUrlShortener) {
     if (evt.target.matches(".js-copy-short-button")) {
       // cheng button text
       evt.target.textContent = "Copied!";
+      // cheng button copy link
+      navigator.clipboard.writeText(
+        evt.target.previousElementSibling.textContent
+      );
       // cheng bacground-coler
       evt.target.classList.add("button-result-copied");
 
