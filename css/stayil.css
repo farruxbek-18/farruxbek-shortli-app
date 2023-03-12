@@ -285,7 +285,11 @@ img {
   width: 100%;
   display: flex;
   flex-direction: column;
+  display: none;
 
+}
+.url-shortener__results-open{
+  display: block;
 }
 .url-shortener__result {
   display: flex;
@@ -321,4 +325,7 @@ img {
   font-weight: 700;
   border-radius:8px;
   padding: 8px 24px 6px;
+}
+.button-result-copied{
+  background-color:#34313D;
 }
